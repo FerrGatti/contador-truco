@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="assets/js/index.js" type="module" defer></script>
+    <script src="assets/js/contador.js" type="module" defer></script>
+    <title>Contador de truco</title>
+</head>
+<body>
+    <div class="container-jugadores">
+        <div class="nosotros" id="nosotros">
+            <div class="botones">
+                <button class="sumar">+</button>
+                <button class="restar">-</button>
+            </div>
+            <h2></h2>
+            <div class="cuenta"></div>
+        </div>
+        <div class="ellos" id="ellos">
+            <div class="botones">
+                <button class="sumar">+</button>
+                <button class="restar">-</button>
+            </div>
+            <h2></h2>
+            <div class="cuenta"></div>
+        </div>
+    </div>
+    <div class="boton-reset">
+        <button class="reset" id="reset">Borrar</button>
+        <dialog type="modal">
+            <h1>Estas seguro de que queres resetar el juego?</h1>
+            <button id="aceptar">Si</button>
+            <button id="volver">No</button>
+        </dialog>
+    </div>
+</body>
+</html>

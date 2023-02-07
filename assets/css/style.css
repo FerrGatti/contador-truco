@@ -1,0 +1,107 @@
+:root{
+    --left-primero: 100%;
+    --left-segundo: 145%;
+    --left-tercero: 55%; 
+    --top-primero:-2rem;
+    --top-segundo:2rem;
+    --dimensiones-grupo: 4rem;
+}
+*{
+    user-select: none;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    background: url(/assets/img/fondo-bar.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+button{
+    color: whitesmoke;
+    background: black;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 4rem;
+    max-width: auto;
+    min-height: 1.5rem;
+    max-height: autp;
+}
+/* Contenedores principales */
+.container-jugadores{
+    display: flex;
+    justify-content: center;
+    left: 30%;
+}
+.nosotros, .ellos{
+    position:relative;
+    width: 15rem;
+    height: 40rem;
+    backdrop-filter: white;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0 0 1rem;
+    overflow: hidden;
+    border: black outset 0.5rem;
+    backdrop-filter: blur(30px);
+}
+
+/* Botones */
+.botones{
+    padding-top: 1rem;
+}
+.boton-reset{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+/* Elementos del contador */
+img{
+    width: 1rem;
+    height: 4rem;
+}
+.grupo{
+    position: relative;
+    left: 20%;
+    width: var(--dimensiones-grupo);
+    height: var(--dimensiones-grupo);
+    margin-bottom: .75rem;
+}
+.separador{
+    border-top: 2px solid black;
+    width: var(--dimensiones-grupo);
+    margin: 2rem  0 2rem 36%;
+}
+.fosforo1{
+    position: absolute;
+    transform: rotate(90deg);
+    top: var(--top-primero);
+    left: var(--left-primero);
+}
+.fosforo2{
+    position: absolute;
+    transform: rotate(180deg);
+    left: var(--left-segundo);
+}
+.fosforo3{
+    position: absolute;
+    transform: rotate(270deg);
+    top: var(--top-segundo);
+    left: var(--left-primero);
+}
+.fosforo4{
+    position: absolute;
+    left: var(--left-tercero);
+}
+.fosforo5{
+    position: absolute;
+    transform: rotate(45deg);
+    left: var(--left-primero);
+}
+/* Fondo de pantalla */
+.fondo-img{
+    position: absolute;
+}
