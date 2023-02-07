@@ -2,8 +2,8 @@ import {Contador} from "./contador.js"
 
 const modal = document.querySelector('dialog');
 
-const nosotros = new Contador("Nosotros", document.getElementById("nosotros"));
-const ellos = new Contador("Ellos", document.getElementById("ellos"));
+const nosotros = new Contador("Nosotros", document.getElementById("nosotros"), 0);
+const ellos = new Contador("Ellos", document.getElementById("ellos"), 0);
 
 document.getElementById("reset").addEventListener("click", ()=> modal.showModal());
 document.getElementById("volver").addEventListener("click", ()=> modal.close());
