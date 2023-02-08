@@ -12,3 +12,9 @@ document.getElementById("aceptar").addEventListener("click", ()=> {
     ellos.reset();
     modal.close();
 });
+
+//LOADER
+window.onload = function(){
+    $(`#onload`).fadeOut();
+    $('body').removeClass('hidden');
+}
