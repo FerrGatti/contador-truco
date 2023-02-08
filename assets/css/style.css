@@ -14,7 +14,7 @@
     font-family: 'Roboto', sans-serif;
 }
 html{
-    background: url(/assets/img/fondo-bar.jpg);
+    background: url(../img/fondo-bar.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -104,4 +104,91 @@ img{
 /* Fondo de pantalla */
 .fondo-img{
     position: absolute;
+}
+/* LOADER */
+/* LOADER */
+.lds-ring {
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.centrado{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.centralizar{
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hidden{
+    overflow: hidden;
+}
+/* Fin de LOADER */
+/* Tabla de puntos */
+.guia-puntos{
+    display: flex;
+    position: relative;
+    width: 15rem;
+    height: auto;
+    font-size: 0.7rem;
+    background-color: whitesmoke;
+    border: 2px outset black;
+}
+table{
+    border-collapse: collapse;
+}
+tr, td{
+    border: 2px solid black;
+}
+.envido{
+    position: absolute;
+    top: 3vh;
+    right: 10vw;
+}
+.flor{
+    position: absolute;
+    top: 40vh;
+    right: 10vw;
+}
+.truco{
+    position: absolute;
+    top: 70vh;
+    right: 16vw;
+    width: auto;
 }

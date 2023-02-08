@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="shortcut icon" href="assets/img/lionel-messi-portrait.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <script src="assets/js/index.js" type="module" defer></script>
     <script src="assets/js/contador.js" type="module" defer></script>
-    <title>Contador de Truco</title>
+    <script src="assets/js/index.js" type="module" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>Contador de truco</title>
 </head>
-<body>
+<body class="hidden">
+    <!-- LOADER -->
+    <div class="centrado" id="onload">
+        <div class="lds-ring centralizado"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <!-- Fin de LOADER -->
     <div class="container-jugadores">
         <div class="nosotros" id="nosotros">
             <div class="botones">
@@ -32,6 +40,115 @@
             <div class="cuenta"></div>
         </div>
     </div>
+    <!-- TABLA CON GUIA DE PUNTOS -->
+    <div class="guia-puntos envido centrado">
+        <table>
+            <tr>
+                <th>Puntos envido</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Querido</td>
+                <td>No querido</td>
+            </tr>
+            <tr>
+                <td>Envido</td>
+                <td>2 pts</td>
+                <td>1 pt</td>
+            </tr>
+
+            <tr>
+                <td>Real Envido</td>
+                <td>3 pts</td>
+                <td>1 pt</td>
+            </tr>
+            <tr>
+                <td>Envido+Real Envido</td>
+                <td>5 pts</td>
+                <td>2 pts</td>
+            </tr>
+            <tr>
+                <td>Envido Envido</td>
+                <td>4 pts</td>
+                <td>2 pts</td>
+            </tr>
+            <tr>
+                <td>Envido + Envido + Real Envido</td>
+                <td>7 pts</td>
+                <td>4 pts</td>
+            </tr>
+            <tr>
+                <td>Falta Envido</td>
+                <td>Buenas</td>
+                <td>Malas</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Puntos restantes para llegar a los 15 del perdedor</td>
+                <td>Partido para el ganador</td>
+            </tr>
+        </table>
+    </div>
+    <div class="guia-puntos truco centrado">
+        <table>
+            <tr>
+                <th>Puntos truco</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quiero</td>
+                <td>No quiero</td>
+            </tr>
+            <tr>
+                <td>Truco</td>
+                <td>2 pts</td>
+                <td>1 pts</td>
+            </tr>
+            <tr>
+                <td>Re-truco</td>
+                <td>3 pts</td>
+                <td>2 pts</td>
+            </tr>
+            <tr>
+                <td>Vale cuatro!</td>
+                <td>4 pts</td>
+                <td>3 pts</td>
+            </tr>
+        </table>
+    </div>
+    <div class="guia-puntos flor centrado">
+        <table>
+            <tr>
+                <th>Puntos flor</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Quiero</td>
+                <td>No quiero</td>
+            </tr>
+            <tr>
+                <td>Flor</td>
+                <td>4 pts</td>
+                <td>3 pts</td>
+            </tr>
+            <tr>
+                <td>Contra Flor</td>
+                <td>6 pts</td>
+                <td>4 pts</td>
+            </tr>
+            <tr>
+                <td>Contra Flor al resto</td>
+                <td>Igual que Falta Envido</td>
+                <td>4 pts</td>
+            </tr>
+            <tr>
+                <td>Flor + Contra + Contra al Resto</td>
+                <td>Igual que Falta Envido</td>
+                <td>6 pts</td>
+            </tr>
+        </table>
+    </div>
+    <!-- FIN DE TABLA CON GUIA DE PUNTOS -->
     <div class="boton-reset">
         <button class="reset" id="reset">Borrar</button>
         <dialog type="modal">
