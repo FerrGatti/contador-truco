@@ -170,6 +170,9 @@ img{
     background-color: whitesmoke;
     border: 2px outset black;
 }
+.hidden2{
+    display: none;
+}
 table{
     border-collapse: collapse;
 }

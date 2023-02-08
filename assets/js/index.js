@@ -17,4 +17,7 @@ document.getElementById("aceptar").addEventListener("click", ()=> {
 window.onload = function(){
     $(`#onload`).fadeOut();
     $('body').removeClass('hidden');
+    $('#guia-puntos').removeClass('hidden2');
+    $('#guia-puntos2').removeClass('hidden2');
+    $('#guia-puntos3').removeClass('hidden2');
 }
