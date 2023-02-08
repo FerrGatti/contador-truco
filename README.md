@@ -8,7 +8,12 @@
    <em>-Responsive para todos los dispositivos</em> <br>
 
 - `Sumar, Restar y Reiniciar puntos mediante botones` <br>
-- `Responsive para todos los dispositivos` <br>
+- `Responsive para todos los dispositivos` <br> <br>
+   <img src="https://user-images.githubusercontent.com/95766371/217630184-d62225c0-8163-4fca-bf0c-cd03363159be.png" style="width:300px; heigth:200px;"> <br>
+   <h1>💻 Acceso al proyecto</h1> <br>
+    ✔ https://ferrgatti.github.io/contador-truco/
+   
 
-[<img src="https://avatars.githubusercontent.com/u/95766371?v=4" width=115><br><sub> |Fernando Gatti| </sub>](https://github.com/FerrGatti)
+
+[<img src="https://avatars.githubusercontent.com/u/95766371?v=4" width=50><br><sub> |Fernando Gatti| </sub>](https://github.com/FerrGatti)
 
