@@ -160,3 +160,35 @@ img{
     overflow: hidden;
 }
 /* Fin de LOADER */
+/* Tabla de puntos */
+.guia-puntos{
+    display: flex;
+    position: relative;
+    width: 15rem;
+    height: auto;
+    font-size: 0.7rem;
+    background-color: whitesmoke;
+    border: 2px outset black;
+}
+table{
+    border-collapse: collapse;
+}
+tr, td{
+    border: 2px solid black;
+}
+.envido{
+    position: absolute;
+    top: 3vh;
+    right: 10vw;
+}
+.flor{
+    position: absolute;
+    top: 40vh;
+    right: 10vw;
+}
+.truco{
+    position: absolute;
+    top: 70vh;
+    right: 16vw;
+    width: auto;
+}
